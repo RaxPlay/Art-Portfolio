@@ -116,7 +116,7 @@ span{
 }
 .pj2 img:hover, .pj3 img:hover, .pj5 img:hover, .pj6 img:hover, .pj7 img:hover, .pj8 img:hover, .pj9 img:hover{
     width: 350px;
-    transform: translateX(-10px);
+    transform: translateX(-10px) translateY(-10px);
     transition: 1s
 }
 /* Animations */
