@@ -18,13 +18,6 @@ span{
     font-size: 2.2rem;
     animation: opacity 2s;
 }
-.container{
-    position: absolute;
-    left: 32%;
-    top: 11.5%;
-    width: 600px;
-    border: 1px solid white;
-}
 .pj1 img{
     width: 330px;
     height: 330px;
