@@ -1,0 +1,161 @@
+/* Main Styling */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(22, 22, 22);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+span{
+    color: blue;
+}
+.heading{
+    position: absolute;
+    left: 35%;
+    top: 3%;
+    font-size: 2.2rem;
+    animation: opacity 2s;
+}
+.container{
+    position: absolute;
+    left: 32%;
+    top: 11.5%;
+    width: 600px;
+    border: 1px solid white;
+}
+.pj1 img{
+    width: 330px;
+    height: 330px;
+    position: absolute;
+    top: 13.5%;
+    left: 26%;
+    border-radius: 10px;
+
+    animation: go-right 2s;
+}
+.pj2 img{
+    width: 330px;
+    position: absolute;
+    top: 13.5%;
+    left: 55%;
+    border-radius: 10px;
+    
+    animation: go-left 2s;
+}
+.pj3 img{
+    width: 330px;
+    position: absolute;
+    top: 60%;
+    left: 26%;
+    border-radius: 10px;
+
+    animation: go-up 2s;
+}
+.pj4 img{
+    width: 330px;
+    height: 333px;
+    position: absolute;
+    top: 72%;
+    left: 55%;
+    border-radius: 10px;
+    
+    animation: go-up 2s;
+}
+.pj5 img{
+    width: 330px;
+    position: absolute;
+    top: 120%;
+    left: 26%;
+    border-radius: 10px;
+
+    animation: go-up 2s;
+}
+.pj6 img{
+    width: 330px;
+    position: absolute;
+    top: 120.3%;
+    left: 55%;
+    border-radius: 10px;
+
+    animation: go-up 2s;
+}
+.pj7 img{
+    width: 330px;
+    position: absolute;
+    top: 180%;
+    left: 26%;
+    border-radius: 10px;
+
+    animation: go-up 2s;
+}
+.pj8 img{
+    width: 330px;
+    position: absolute;
+    top: 180%;
+    left: 55%;
+    border-radius: 10px;
+
+    animation: go-left 2s;
+}
+.pj9 img{
+    width: 330px;
+    position: absolute;
+    top: 220%;
+    left: 55%;
+    border-radius: 10px;
+
+    animation: go-left 2s;
+}
+.goodbye{
+    position: absolute;
+    top: 288%;
+    left: 37.5%;
+    font-size: 1.3rem;
+}
+/* Hover */
+.pj1 img:hover, .pj4 img:hover{
+    width: 350px;
+    height: 370px;
+    transform: translateX(-10px);
+    transition: 1s
+}
+.pj2 img:hover, .pj3 img:hover, .pj5 img:hover, .pj6 img:hover, .pj7 img:hover, .pj8 img:hover, .pj9 img:hover{
+    width: 350px;
+    transform: translateX(-10px);
+    transition: 1s
+}
+/* Animations */
+@keyframes go-right{
+    from{
+        transform: translateX(-800px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes go-left{
+    from{
+        transform: translateX(700px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes go-up{
+    from{
+        transform: translateY(800px);
+        opacity: 0;
+    }
+}
+@keyframes opacity{
+    from{
+        transform: translateY(-800px);
+        opacity: 0;
+    }
+}
