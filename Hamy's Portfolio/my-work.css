@@ -18,104 +18,80 @@ span{
     font-size: 2.2rem;
     animation: opacity 2s;
 }
-.pj1 img{
-    width: 330px;
-    height: 330px;
+.galeria {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     position: absolute;
-    top: 13.5%;
-    left: 26%;
-    border-radius: 10px;
-
+    left: 28.5%;
+    gap: 80px;
+    width: 90%;
+    max-width: 800px;
+}
+.pj9{
+    position: absolute;
+    left: 55%;
+    top: 85.5%;
+}
+.galeria img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Making Website Responsive */
+@media (width = 1366px) {
+    .galeria {
+        position: absolute;
+        left: 20%;
+    }
+}
+@media (width <= 1280px) {
+    .galeria {
+        position: absolute;
+        left: 18%;
+    }
+}
+@media (width <= 1024px) {
+    .galeria {
+        position: absolute;
+        left: 11%;
+    }
+}
+@media (width <= 853px) {
+    .galeria {
+        position: absolute;
+        left: 6%;
+    }
+}
+@media (width <= 768px) {
+    .galeria {
+        grid-template-columns: 1fr;
+        position: absolute;
+        left: 5%;
+    }
+}
+/* Assigning Animations */
+.pj1{
     animation: go-right 2s;
 }
-.pj2 img{
-    width: 330px;
-    position: absolute;
-    top: 13.5%;
-    left: 55%;
-    border-radius: 10px;
-    
+.pj2{
     animation: go-left 2s;
 }
-.pj3 img{
-    width: 330px;
-    position: absolute;
-    top: 60%;
-    left: 26%;
-    border-radius: 10px;
-
+.pj3, .pj4, .pj5, .pj6, .pj7, .pj8, .pj9{
     animation: go-up 2s;
-}
-.pj4 img{
-    width: 330px;
-    height: 333px;
-    position: absolute;
-    top: 72%;
-    left: 55%;
-    border-radius: 10px;
-    
-    animation: go-up 2s;
-}
-.pj5 img{
-    width: 330px;
-    position: absolute;
-    top: 120%;
-    left: 26%;
-    border-radius: 10px;
-
-    animation: go-up 2s;
-}
-.pj6 img{
-    width: 330px;
-    position: absolute;
-    top: 120.3%;
-    left: 55%;
-    border-radius: 10px;
-
-    animation: go-up 2s;
-}
-.pj7 img{
-    width: 330px;
-    position: absolute;
-    top: 180%;
-    left: 26%;
-    border-radius: 10px;
-
-    animation: go-up 2s;
-}
-.pj8 img{
-    width: 330px;
-    position: absolute;
-    top: 180%;
-    left: 55%;
-    border-radius: 10px;
-
-    animation: go-left 2s;
-}
-.pj9 img{
-    width: 330px;
-    position: absolute;
-    top: 220%;
-    left: 55%;
-    border-radius: 10px;
-
-    animation: go-left 2s;
-}
-.goodbye{
-    position: absolute;
-    top: 288%;
-    left: 37.5%;
-    font-size: 1.3rem;
-}
+} 
 /* Hover */
 .pj1 img:hover, .pj4 img:hover{
-    width: 350px;
-    height: 370px;
+    width: 105%;
+    height: auto;
     transform: translateX(-10px) translateY(-10px);
     transition: 1s
 }
 .pj2 img:hover, .pj3 img:hover, .pj5 img:hover, .pj6 img:hover, .pj7 img:hover, .pj8 img:hover, .pj9 img:hover{
-    width: 350px;
+    width: 105%;
+    height: auto;
     transform: translateX(-10px) translateY(-10px);
     transition: 1s
 }
