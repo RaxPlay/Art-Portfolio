@@ -16,7 +16,7 @@ span{
     font-size: 1.4rem;
     margin-top: 20px;
     font-size: clamp(1.4rem, 0.72rem + 1.4vw, 2.4rem);
-    animation: opacity 2s;
+    animation: opacity 1.7s;
 }
 /*Main Styling*/
 .galeria {
