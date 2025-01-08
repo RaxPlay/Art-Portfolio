@@ -12,12 +12,13 @@ span{
     color: blue;
 }
 .heading{
-    margin-top: 20px; 
     text-align: center;
     font-size: 1.4rem;
+    margin-top: 20px;
     font-size: clamp(1.4rem, 0.72rem + 1.4vw, 2.4rem);
     animation: opacity 2s;
 }
+/*Main Styling*/
 .galeria {
     margin-top: 100px;
     display: grid;
@@ -32,8 +33,13 @@ span{
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 5px;
+    border-radius: 10px 10px 0px 0px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.description{
+    padding: 20px;
+    background-color: rgb(39, 39, 39);
+    border-radius: 0px 0px 10px 10px;
 }
 /* Making Website Responsive */
 @media (width = 1366px) {
@@ -67,28 +73,31 @@ span{
         left: 5%;
     }
 }
-/* Assigning Animations */
+/* Animating Projects */
 .pj1{
+    text-align: center;
     animation: go-right 2s;
 }
 .pj2{
+    text-align: center;
     animation: go-left 2s;
 }
 .pj3, .pj4, .pj5, .pj6, .pj7, .pj8, .pj9{
+    text-align: center;
     animation: go-up 2s;
 } 
 /* Hover */
-.pj1 img:hover, .pj4 img:hover{
+.pj1:hover, .pj4:hover{
     width: 105%;
     height: auto;
     transform: translateX(-10px) translateY(-10px);
     transition: 1s
 }
-.pj2 img:hover, .pj3 img:hover, .pj5 img:hover, .pj6 img:hover, .pj7 img:hover, .pj8 img:hover, .pj9 img:hover{
+.pj2:hover, .pj3:hover, .pj5:hover, .pj6:hover, .pj7:hover, .pj8:hover, .pj9:hover{
     width: 105%;
     height: auto;
-    transform: translateX(-10px) translateY(-10px);
-    transition: 1s
+    transform: translate(-10px, -10px);
+    transition: 1s;
 }
 /* Animations */
 @keyframes go-right{
